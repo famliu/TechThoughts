@@ -1,4 +1,18 @@
-Efter knappt ett års jobb som DevOps ingenjör vill jag skriva ner mina tankar. Om det kan hjälpa en och annan att bättre förstå "moln" blir jag jätteglad:-) Med reservation för faktafel/grova förenklingar..., precis som det står i README filen.
+Har jobbat ett tag som CICD/DevOps ingenjör. Nu öppnas en liten lucka till välbehövlig paus:-)  Tänker skriva ner mina tankar, inte minst för min sons kommande fråga "Pappa, vad jobbar du med?". Han älskar mat och analogi så det får bli något åt det hållet. Lyckas jag bra och kan hålla nere min pinsamhetsfaktor finns det kanske möjlighet att presentera för hans klass framöver:-)
 
-En aktör som erbjuder molnbaserad webbtjänst kan liknas vid ett (modernt) bageri. Aktören har webbtjänster (Swish/spel/sociala medier...) och bageriet har olika bröd. Kunder kan swisha/spela/läsa via webbtjänster precis som de kan lukta/känna på bröden. Speciellt med det bageriet är att kunder bara får lukta/känna på bröden men inte fysiskt äta/köpa dem (dålig annalogi jag vet men bästa jag kommer på just nu).
+Börjar förstås att googla. "CICD analogy" gav faktiskt riktigt bra träff https://thenewstack.io/ci-vs-cd-explained-by-emoji-part-1-continuous-integration/ och https://thenewstack.io/ci-vs-cd-explained-by-emoji-part-2-continuous-delivery/
 
+Sidorna är väldigt bra och har sparat mig ofantligt med tid men vill ändå göra vissa tillägg/omskrivningar:
+
+1. Pizzorna (applikationer) levereras inte riktigt till kund, utan ligger i något kylskåp (moln) med hål (API/URL) som kund kan lukta/känna ( innehåll/data ifrån).
+2. Kockar gör inte bara pizzor och skriver recept, de skriver ner också var/hur de ska ligga i kylskåpen.
+3. Säkerhet kommer in på olika ställen (DevSecOps), det kan vara att pizzorna behöver kontrolleras (skannas), kockarna ska bara kunna jobba med sitt och inte titta på andra (Git repo), färdiga bröd ska läggas på rätt plats med lås (namespace)...
+4. Någon robot (e.g. ArgoCD) ser till att det som ligger i kylskåp stämmer med det kockarna skrivit i steg 2 och gör justeringar vid behov.
+5. Kylskåpen av olika märken (Azure/AWS/OCP/Google) är jätteavancerade med olika fack/lådor för olika pizzor. Det kan skapas hål mellan lådorna så pizzalukten kan blandas. Lådstorleken kan ändras. Det finns mätskärmar som mäter temp/tryck... för varje låda o.s.v.
+6. Kylskåpen kan stå i köket så kunderna inte kommer åt, öppet som i stormarknad, eller både och.
+7. Någon restaurang anno 1947 har en jättepizza på flera hundra kilo i något träskåp. Vissa ingredienser är svåra att få tag på idag. Hur ska man kunna flytta över en sådan till moderna kylskåp som är mest lämpade att hysa många men små pizzor?
+
+En fråga till min son blir då, "Vad tror du är roligast? Kock, den som ser till allt i köket görs och fixar när det krånglar eller den som sköter kylskåpen". Jag gissar han svarar kocken, eller kanske kunden, som får lukta/känna så många pizzor. Men varför får man inte äta dem:-)
+
+P.S. Angående kylskåpsmärken så är min högst privata erfarenhet senaste tiden att OCP har given plats på myndigheterna. AWS finns här och där. Azure kommer starkt.
+Med reservation för grova förenklingar/direkt felaktigheter/krystade analogier:-)
